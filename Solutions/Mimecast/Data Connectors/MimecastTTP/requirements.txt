@@ -9,3 +9,4 @@ azure-storage-file-share==12.15.0
 aiohttp
 tenacity
 asyncio
+werkzeug>=3.0.6 # not directly required, pinned by Snyk to avoid a vulnerability
