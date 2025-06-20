@@ -4,3 +4,4 @@ azure-identity
 azure-monitor-query
 requests
 azure-functions-durable
+urllib3>=2.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
