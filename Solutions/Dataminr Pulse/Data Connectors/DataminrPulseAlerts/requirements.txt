@@ -12,3 +12,4 @@ cryptography==44.0.0
 asyncio
 aiohttp
 azure-storage-file-share==12.10.1
+urllib3>=2.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
