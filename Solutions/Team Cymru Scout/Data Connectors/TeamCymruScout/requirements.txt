@@ -8,3 +8,4 @@ azure-monitor-query
 azure-identity
 tenacity
 azure-storage-file-share==12.10.0
+urllib3>=2.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
