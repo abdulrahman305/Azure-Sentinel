@@ -4,3 +4,4 @@ azure-identity
 azure-monitor-query
 requests
 azure-functions-durable
+aiohttp>=3.12.14 # not directly required, pinned by Snyk to avoid a vulnerability
