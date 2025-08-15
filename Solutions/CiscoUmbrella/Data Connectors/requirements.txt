@@ -10,7 +10,7 @@ certifi>=2022.12.7
 cffi>=1.17.1
 chardet==3.0.4
 cryptography<45,>=42.0.0
-protobuf>=4.21.6
+protobuf>=4.25.8
 docutils==0.15.2
 isodate==0.6.1
 jmespath==0.10.0
