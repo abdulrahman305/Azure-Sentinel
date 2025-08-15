@@ -1,8 +1,16 @@
+import sys
+import os
+
+# Get the directory of this script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Remove the script's directory from sys.path to avoid importing local malicious modules. 
+if script_dir in sys.path:
+    sys.path.remove(script_dir)
+
 __unittest = True #prevents stacktrace during most assertions
 
 import unittest
-import os
-import sys
 import yaml
 import re
 import subprocess
@@ -16,7 +24,7 @@ import csv
 DUMMY_VALUE = "\'!not_REAL_vAlUe\'"
 MAX_FILTERING_PARAMETERS = 2
 # Workspace ID for the Log Analytics workspace where the ASim filtering tests will be performed.
-WORKSPACE_ID = "e9beceee-7d61-429f-a177-ee5e2b7f481a"
+WORKSPACE_ID = "cb6a2b4f-7073-4e59-9ab0-803cde6b2221"
 # Timespan for the parser query
 TIME_SPAN_IN_DAYS = 2
 
@@ -625,7 +633,7 @@ class FilteringTest(unittest.TestCase):
             post = get_postfix(value, rows, substrings_list, delimiter)
 
             # Add post to the list if it's not already present
-            if post not in substrings_list:
+            if post and post not in substrings_list:
                 substrings_list.append(post)
 
             # If the list has reached the required number of substrings, break the loop
@@ -635,7 +643,7 @@ class FilteringTest(unittest.TestCase):
             # If post is equal to value, also add pre to the list
             if post == value:
                 pre = get_prefix(value, rows, substrings_list, delimiter)
-                if pre not in substrings_list:
+                if pre and pre not in substrings_list:
                     substrings_list.append(pre)
             
         return substrings_list
