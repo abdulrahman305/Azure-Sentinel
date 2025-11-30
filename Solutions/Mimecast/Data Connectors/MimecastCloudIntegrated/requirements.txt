@@ -9,3 +9,4 @@ azure-identity
 azure-monitor-ingestion
 aiohttp
 tenacity
+werkzeug>=3.1.4 # not directly required, pinned by Snyk to avoid a vulnerability
