@@ -12,3 +12,4 @@ pyjwt>=2.4.0
 asyncio
 aiohttp>=3.9.2
 requests
+werkzeug>=3.1.4 # not directly required, pinned by Snyk to avoid a vulnerability
