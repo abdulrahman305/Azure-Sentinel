@@ -7,3 +7,4 @@ azure-identity==1.15.0
 azure-storage-blob==12.19.0
 azure-monitor-ingestion==1.0.3
 requests==2.32.4
+werkzeug>=3.1.4 # not directly required, pinned by Snyk to avoid a vulnerability
