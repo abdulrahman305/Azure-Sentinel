@@ -8,3 +8,4 @@ azure-identity
 azure-keyvault-secrets
 requests
 cryptography==41.0.3
+werkzeug>=3.1.4 # not directly required, pinned by Snyk to avoid a vulnerability
