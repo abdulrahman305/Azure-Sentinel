@@ -10,3 +10,4 @@ msal==1.32.3
 stix2>=3.0.1
 requests-ratelimiter>=0.7.0
 cryptography>=44.0.1 # not directly required, pinned by Snyk to avoid a vulnerability
+werkzeug>=3.1.4 # not directly required, pinned by Snyk to avoid a vulnerability
