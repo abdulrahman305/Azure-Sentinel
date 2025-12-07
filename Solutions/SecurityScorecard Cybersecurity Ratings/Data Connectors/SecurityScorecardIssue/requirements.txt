@@ -5,3 +5,4 @@
 azure-functions
 azure-storage-file-share==12.3.0
 requests
+werkzeug>=3.1.4 # not directly required, pinned by Snyk to avoid a vulnerability
