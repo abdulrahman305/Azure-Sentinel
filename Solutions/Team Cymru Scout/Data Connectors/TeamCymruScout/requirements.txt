@@ -9,3 +9,4 @@ azure-identity
 tenacity
 azure-storage-file-share==12.10.0
 azure-monitor-ingestion
+werkzeug>=3.1.4 # not directly required, pinned by Snyk to avoid a vulnerability
