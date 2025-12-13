@@ -8,3 +8,4 @@ azure-storage-file-share==12.15.0
 azure-monitor-ingestion
 aiohttp
 tenacity
+urllib3>=2.6.0 # not directly required, pinned by Snyk to avoid a vulnerability
