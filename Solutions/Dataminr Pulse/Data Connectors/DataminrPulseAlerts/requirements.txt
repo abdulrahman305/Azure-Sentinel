@@ -14,3 +14,4 @@ aiohttp
 azure-storage-file-share==12.10.1
 azure-monitor-ingestion
 werkzeug>=3.1.4 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.6.0 # not directly required, pinned by Snyk to avoid a vulnerability
