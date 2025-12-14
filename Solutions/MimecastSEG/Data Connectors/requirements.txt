@@ -5,3 +5,4 @@ datetime
 requests~=2.25.1
 msal~=1.9.0
 azure-storage-blob
+urllib3>=2.6.0 # not directly required, pinned by Snyk to avoid a vulnerability
