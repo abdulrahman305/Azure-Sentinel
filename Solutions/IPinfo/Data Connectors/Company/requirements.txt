@@ -7,3 +7,4 @@ azure.identity
 azure.monitor.ingestion
 requests
 maxminddb
+werkzeug>=3.1.4 # not directly required, pinned by Snyk to avoid a vulnerability

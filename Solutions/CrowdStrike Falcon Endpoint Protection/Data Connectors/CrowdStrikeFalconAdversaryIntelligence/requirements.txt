@@ -1,3 +1,4 @@
 azure-functions>=1.18.0
 requests>=2.32.4
 azure-storage-file-share>=12.22.0
+werkzeug>=3.0.6 # not directly required, pinned by Snyk to avoid a vulnerability
